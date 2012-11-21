@@ -1,18 +1,18 @@
-wget http://download.geonames.org/export/dump/alternateNames.zip
+#wget http://download.geonames.org/export/dump/alternateNames.zip
 
-unzip -o alternateNames.zip
-rm alternateNames.zip
+#unzip -o alternateNames.zip
+#rm alternateNames.zip
 
-ruby parse-alternates.rb > alternateNames.json
-ruby parse-languages.rb > iso-languagecodes.json
+#ruby parse-alternates.rb > alternateNames.json
+#ruby parse-languages.rb > iso-languagecodes.json
 
-rm iso-languagecodes.txt
-rm alternateNames.txt
+#rm iso-languagecodes.txt
+#rm alternateNames.txt
 
-ruby parse-continents.rb > continents.json
+#ruby parse-continents.rb > continents.json
 
 wget http://download.geonames.org/export/dump/allCountries.zip
-unzip -o allCountries.txt
+unzip -o allCountries.zip
 rm allCountries.zip
 
 ruby parse-countries.rb > allCountries.json
